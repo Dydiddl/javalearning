@@ -8,5 +8,21 @@ public class _04_Operator4 {
         boolean 제육볶음 = true;
 
         System.out.println(김치찌개 || 계란말이 || 제육볶음);
+        System.out.println(김치찌개 && 계란말이 && 제육볶음);
+
+        // And 연산
+        System.out.println((5 > 3) && (3 > 1));
+        System.out.println((5 > 3 ) && (3 < 1));
+
+        // Or 연산
+        System.out.println((5 > 3) || (3 > 1));
+        System.out.println((5 > 3) || (3 < 1));
+        System.out.println((5 < 3) || (3 < 1));
+
+        // 논리 부정 연산자
+        System.out.println(!true);
+        System.out.println(!false);
+        System.out.println(!(5 == 5));
+        System.out.println(!(5 == 3));  //  식의 반대를 출력해줌
     }
 }
