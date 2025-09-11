@@ -1,6 +1,6 @@
 # javalearning
 
-## chap_01
+## __00__Basic.chap_01
 - 01 Hello World
 - 02 Date Types
 - 03 Variables
@@ -10,7 +10,7 @@
 - 07 Type Casting
 - Quiz 01
 
-## chap_02
+## __00__Basic.chap_02
 - 01 Operator1
 - 02 Operator2
 - 03 Operator3
@@ -18,14 +18,14 @@
 - 05 Operator5
 - Quiz 02
 
-## chap_03
+## __00__Basic.chap_03
 - 01 String1
 - 02 String2
 - 03 String Compare
 - 04 Escape Sequence
 - Quiz 03
 
-## chap_04
+## __00__Basic.chap_04
 - 01 If
 - 02 Else
 - 03 Else If
