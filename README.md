@@ -20,3 +20,19 @@
 
 ## chap_03
 - 01 String1
+- 02 String2
+- 03 String Compare
+- 04 Escape Sequence
+- Quiz 03
+
+## chap_04
+- 01 If
+- 02 Else
+- 03 Else If
+- 04 Switch Case
+- 05 For
+- 06 While
+- 07 Do While
+- 08 Nested Loop
+- 09 Multiple Table
+- 10 Break
