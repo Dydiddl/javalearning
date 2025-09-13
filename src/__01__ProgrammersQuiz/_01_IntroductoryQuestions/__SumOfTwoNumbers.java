@@ -1,6 +1,6 @@
 package __01__ProgrammersQuiz._01_IntroductoryQuestions;
 
-public class _02_SumOfTwoNumbers {
+public class __SumOfTwoNumbers {
     public static int sumNumbers(int num1, int num2) {
         return num1 + num2;
     }

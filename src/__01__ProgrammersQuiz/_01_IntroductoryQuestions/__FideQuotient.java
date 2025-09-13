@@ -1,6 +1,6 @@
 package __01__ProgrammersQuiz._01_IntroductoryQuestions;
 
-public class _01_FideQuotient {
+public class __FideQuotient {
     public static int solution(int num1, int num2) {
         int result = num1 / num2;
         return result;
