@@ -10,17 +10,18 @@ public class __SequenceAndIntervalQueries {
     }
     public static int[] solution(int[] arr, int[][] queries) {
         int result[] = {};
+        int comparisonArray[] = {};
         int rangeInitialValue = 0;
         int rangeLastValue = 0;
-        Arrays.sort(arr);
+        int comparisonNumber = 0;
+
         for (int i = 0; i < queries.length; i++) {
             rangeInitialValue = queries[i][0];
             rangeLastValue = queries[i][1];
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[j] >= rangeInitialValue && arr[j] <= rangeLastValue) {
-                    if (arr[j] > queries[i][3]) {
-                        result[i] = arr[j];
-
+            comparisonNumber = queries[i][3];
+            for (int j = rangeInitialValue; j < rangeLastValue; j++) {
+                if (arr[j] > comparisonNumber) {
+                    comparisonArray += arr[j];
                     }
                 }
             }
