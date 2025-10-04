@@ -9,23 +9,25 @@ public class __SequenceAndIntervalQueries {
         System.out.println(Arrays.toString(solution(arr, queries)));
     }
     public static int[] solution(int[] arr, int[][] queries) {
-        int result[] = {};
-        int comparisonArray[] = {};
-        int rangeInitialValue = 0;
-        int rangeLastValue = 0;
-        int comparisonNumber = 0;
+        int result[] = new int[queries.length];  //  출력값
+        int rangeInitialValue = 0;  //  결과값 범위 초기값
+        int rangeLastValue = 0;  //  결과값 범위 최종값
+        int comparisonNumber = 0;  //  비교하는 번호
 
         for (int i = 0; i < queries.length; i++) {
-            rangeInitialValue = queries[i][0];
-            rangeLastValue = queries[i][1];
-            comparisonNumber = queries[i][3];
-            for (int j = rangeInitialValue; j < rangeLastValue; j++) {
-                if (arr[j] > comparisonNumber) {
-                    comparisonArray += arr[j];
+            rangeInitialValue = queries[i][0];  //  범위의 초기값 설정
+            rangeLastValue = queries[i][1];  //  범위의 최종값 설정
+            comparisonNumber = queries[i][2];  //  비교하는 번호
+
+            int minValue = Integer.MAX_VALUE;
+
+            for (int j = rangeInitialValue; j <= rangeLastValue; j++) {
+                if (arr[j] > comparisonNumber && arr[j] < minValue) {
+                    minValue = arr[j];
                     }
                 }
+            result[i] = (minValue == Integer.MAX_VALUE) ? -1 : minValue;
             }
-        }
         return result;
     }
 }
